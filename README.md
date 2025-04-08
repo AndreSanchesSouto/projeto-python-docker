@@ -19,17 +19,14 @@ A API possui uma única rota:
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 cd nome-do-repositorio
 
-### 2. Crie um ambiente virtual
-python3 -m venv venv
-source venv/bin/activate
+### 2. Verifique se o Docker está configurado corretaemnte na máquina
+docker ps
 
-### 3. Instale as dependencia
-pip install fastapi uvicorn
+### 3. Rode o docker para iniciar a aplicação:
+docker build -t fastapi-app .
+docker run -p 8000:8000 fastapi-app
 
-### 4. Inicie a aplicação
-uvicorn main:app --reload
-
-### 5. Acesse a API
+### 4. Acesse a API:
 Abra no navegador: http://localhost:8000
 Você verá uma resposta como:
 
