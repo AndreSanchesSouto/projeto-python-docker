@@ -20,7 +20,9 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
 cd nome-do-repositorio
 
 ### 2. Verifique se o Docker está configurado corretaemnte na máquina
+```shell
 docker ps
+```
 
 ### 3. Rode o docker para iniciar a aplicação:
 
