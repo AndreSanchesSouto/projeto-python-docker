@@ -23,8 +23,11 @@ cd nome-do-repositorio
 docker ps
 
 ### 3. Rode o docker para iniciar a aplicação:
+
+```shell
 docker build -t fastapi-app .
 docker run -p 8000:8000 fastapi-app
+```
 
 ### 4. Acesse a API:
 Abra no navegador: http://localhost:8000
